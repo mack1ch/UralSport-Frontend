@@ -1,3 +1,3 @@
-export default function DynamicEvent() {
-    return <>Привет</>;
+export default function DynamicEvent({ params }: { params: { id: number } }) {
+    return <>{params.id}</>;
 }
