@@ -1,3 +1,4 @@
+'use client';
 import Link from 'next/link';
 import styles from './ui.module.scss';
 import { IEvent } from '@/shared/interface/event';
