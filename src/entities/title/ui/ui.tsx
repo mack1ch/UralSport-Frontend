@@ -1,8 +1,22 @@
+import { CSSProperties } from 'react';
 import styles from './ui.module.scss';
-export const Title = ({ children }: { children: string }) => {
+export const Title = ({
+    children,
+    onClick,
+    style,
+}: {
+    children: string;
+    onClick?: () => void;
+    style?: CSSProperties;
+}) => {
     return (
         <>
-            <h1 className={styles.h1}>{children}</h1>
+            <h1
+                style={{ cursor: onClick ? 'pointer' : 'default', ...style }}
+                onClick={onClick}
+                className={styles.h1}>
+                {children}
+            </h1>
         </>
     );
 };

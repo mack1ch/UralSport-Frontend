@@ -1,13 +1,13 @@
-'use client';
-import Link from 'next/link';
+import { Settings } from '@/entities/icons/settings';
 import styles from './ui.module.scss';
 import { IEvent } from '@/shared/interface/event';
 import Image from 'next/image';
+import { publishHandleClick, rejectHandleClick } from '../api';
 
-export const EventCard = ({ item }: { item: IEvent }) => {
+export const EventCard = ({ item, isModerate = false }: { item: IEvent; isModerate?: boolean }) => {
     return (
         <>
-            <Link className={styles.eventCard} href={`/events/${item.id}`}>
+            <article className={styles.eventCard} /*href={`/events/${item.id}`}*/>
                 <section className={styles.header}>
                     <Image
                         className={styles.cover}
@@ -16,6 +16,7 @@ export const EventCard = ({ item }: { item: IEvent }) => {
                         height={160}
                         alt="Изображение мероприятия"
                     />
+                    <Settings className={styles.settings} id={item.id} />
                 </section>
                 <section className={styles.main}>
                     <div className={styles.main__title}>
@@ -30,12 +31,22 @@ export const EventCard = ({ item }: { item: IEvent }) => {
                     <p title={item.platform.name} className={styles.platform}>
                         {item.platform.name}
                     </p>
-                    <div className={styles.btnSettings}>
-                        <button className={styles.published}>Опубликовать</button>
-                        <button className={styles.reject}>Отклонить</button>
-                    </div>
+                    {!isModerate && (
+                        <div className={styles.btnSettings}>
+                            <button
+                                onClick={() => publishHandleClick(item.id)}
+                                className={styles.published}>
+                                Опубликовать
+                            </button>
+                            <button
+                                onClick={() => rejectHandleClick(item.id)}
+                                className={styles.reject}>
+                                Отклонить
+                            </button>
+                        </div>
+                    )}
                 </section>
-            </Link>
+            </article>
         </>
     );
 };

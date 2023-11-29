@@ -23,7 +23,7 @@ export const HeaderItems: IHeaderItem[] = [
     {
         id: 0,
         title: 'Аналитика',
-        path: '/analytics',
+        path: '/analytic',
         icon: Analytic,
         activeIcon: ActiveAnalytic,
     },

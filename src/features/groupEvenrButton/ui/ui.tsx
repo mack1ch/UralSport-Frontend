@@ -25,7 +25,7 @@ export const GroupEventButton = () => {
                         use={pathname === '/events/settings/published' ? 'primary' : 'text'}>
                         Опубликованные
                     </Button>
-                    <PlusIcon path="event/create" />
+                    <PlusIcon path="/events/create" />
                 </div>
             </ThemeContext.Provider>
         </>
