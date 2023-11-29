@@ -1,5 +1,5 @@
 import { PrivateRoute } from '@/shared/authHelpers/privateRouter';
-import { PageLayout } from '@/shared/layout/ui/ui';
+import { PageLayout } from '@/shared/layout';
 import { Header } from '@/widgets/header';
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
@@ -9,9 +9,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     <Header />
                 </header>
                 <main style={{ paddingBottom: '2rem' }}>
-                    <PageLayout>
-                        <PrivateRoute>{children}</PrivateRoute>
-                    </PageLayout>
+                    <PrivateRoute>
+                        <PageLayout>{children}</PageLayout>
+                    </PrivateRoute>
                 </main>
             </div>
         </>

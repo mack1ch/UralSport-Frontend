@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './ui.module.scss';
 import ProductLogo from '../../../../public/assets/logo.svg';
 import Image from 'next/image';
