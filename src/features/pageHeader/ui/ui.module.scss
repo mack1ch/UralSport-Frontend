@@ -2,4 +2,11 @@
     display: flex;
     align-items: center;
     gap: 8px;
+
+    .hover {
+        transition: all 0.25s;
+        &:hover {
+            color: #9932cc;
+        }
+    }
 }

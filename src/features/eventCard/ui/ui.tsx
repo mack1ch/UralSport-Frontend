@@ -28,10 +28,8 @@ export const EventCard = ({ item, isModerate = false }: { item: IEvent; isModera
                             <p className={styles.total_tickets}>{item.total_tickets} билетов</p>
                         </dd>
                     </div>
-                    <p title={item.platform.name} className={styles.platform}>
-                        {item.platform.name}
-                    </p>
-                    {!isModerate && (
+
+                    {isModerate && (
                         <div className={styles.btnSettings}>
                             <button
                                 onClick={() => publishHandleClick(item.id)}

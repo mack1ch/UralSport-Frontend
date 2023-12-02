@@ -5,6 +5,7 @@ import { IEvent } from '@/shared/interface/event';
 import { GetModeratorEvents, GetPublishedEvents } from '../api';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
+
 export const Events = () => {
     const [publishedEvents, setPublishedEvents] = useState<IEvent[] | null | Error>(null);
     const [moderateEvents, setModerateEvents] = useState<IEvent[] | null | Error>(null);

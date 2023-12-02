@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .inputs {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 120px;
+
+        .fileUpload {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            .label {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}

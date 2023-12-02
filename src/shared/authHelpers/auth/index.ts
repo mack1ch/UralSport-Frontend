@@ -1,5 +1,3 @@
-import { cookies } from 'next/headers';
-
 export const isAuthenticated = (): boolean => {
     const accessToken = getAccessToken();
     return !!accessToken;

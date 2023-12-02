@@ -14,14 +14,14 @@ export const HeaderItems: IHeaderItem[] = [
         activeIcon: ActiveCalendar,
     },
     {
-        id: 0,
+        id: 1,
         title: 'Площадки',
         path: '/platform',
         icon: Pin,
         activeIcon: ActivePin,
     },
     {
-        id: 0,
+        id: 2,
         title: 'Аналитика',
         path: '/analytic',
         icon: Analytic,

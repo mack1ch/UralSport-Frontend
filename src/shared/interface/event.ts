@@ -7,13 +7,14 @@ export interface IEvent {
     total_tickets: string;
     age_limit: string;
     time: string;
-    price: number;
+    price: string;
     artist: string;
     pushkin_payment: boolean;
     platform: IPlatform;
     tags: ITags[];
     category: ICategory[];
     images: IImages[];
+    
 }
 
 export interface IPlatform {

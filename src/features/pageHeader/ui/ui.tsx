@@ -16,7 +16,10 @@ export const PageHeader: FC<PageHeaderProps> = ({ pageName, prePageName }) => {
     return (
         <>
             <div className={styles.row}>
-                <Title style={{ fontWeight: '600' }} onClick={() => router.back()}>
+                <Title
+                    className={styles.hover}
+                    style={{ fontWeight: '600' }}
+                    onClick={() => router.back()}>
                     {prePageName}
                 </Title>
                 <Image src={LeftArrow} width={24} height={24} alt="Следующая" />
