@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 64px;
+    padding-right: 64px;
+    width: 100vw;
+    height: 80px;
+    @media screen and (max-width: 640px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    @media screen and (max-width: 560px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    @media screen and (max-width: 440px) {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .title {
+        font-family: Oddval;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        color: #222;
+        .purple {
+            color: #9932cc;
+        }
+        @media screen and (max-width: 560px) {
+            font-size: 24px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        @media screen and (max-width: 560px) {
+            gap: 8px;
+        }
+        .auth {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            transition: all 0.25s;
+            &:hover {
+                color: #9932cc;
+            }
+            @media screen and (max-width: 560px) {
+                font-size: 14px;
+            }
+        }
+    }
+}

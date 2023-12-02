@@ -1,0 +1,22 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #9932cc;
+    padding: 8px 24px 8px 24px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    transition: all 0.25s;
+    &:hover {
+        background: #9932cc;
+        color: #fff;
+    }
+
+    @media screen and (max-width: 560px) {
+        padding: 4px 16px 4px 16px;
+        font-size: 14px;
+    }
+}

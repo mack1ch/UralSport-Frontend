@@ -1,0 +1,33 @@
+.layout {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    .text {
+        color: #9932cc;
+        font-family: Oddval;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        text-align: center;
+        padding-left: 100%;
+        animation: text 20s infinite linear;
+        white-space: nowrap;
+    }
+
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+
+@keyframes text {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-160%, 0);
+    }
+}
