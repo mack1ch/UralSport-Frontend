@@ -17,7 +17,7 @@ export const Header = () => {
                     <Link className={styles.auth} href="/auth">
                         Войти
                     </Link>
-                    <ConnectButton>Подключиться</ConnectButton>
+                    <ConnectButton path="/form">Подключиться</ConnectButton>
                 </div>
             </header>
         </>
