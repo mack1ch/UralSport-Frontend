@@ -24,7 +24,7 @@ const Mont = localFont({
 
 export const metadata: Metadata = {
     title: 'Урал Спорт',
-    description: 'Админ панель дял министерства спорта Свердловской области',
+    description: 'Админ панель для Министерства спорта Свердловской области',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
