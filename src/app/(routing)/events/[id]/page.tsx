@@ -1,3 +1,9 @@
+import { ViewEvent } from '@/widgets/viewEvent';
+
 export default function DynamicEvent({ params }: { params: { id: number } }) {
-    return <>{params.id}</>;
+    return (
+        <>
+            <ViewEvent id={params.id} />
+        </>
+    );
 }

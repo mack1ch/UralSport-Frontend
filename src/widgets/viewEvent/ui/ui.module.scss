@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        .h2 {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            color: #9932cc;
+        }
+        .h3 {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: #7b7b7b;
+        }
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .cover {
+            border-radius: 12px;
+        }
+        .description {
+            max-width: 40%;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 110%;
+            color: #7b7b7b;
+        }
+    }
+}
