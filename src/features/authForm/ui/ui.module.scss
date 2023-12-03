@@ -12,6 +12,17 @@
     border-radius: 28px;
     background: #fff;
     gap: 24px;
+
+    @media screen and (max-width: 1024px) {
+        padding: 24px 32px;
+        margin: 0 8px 0 8px;
+    }
+    @media screen and (max-width: 640px) {
+        gap: 16px;
+        padding: 16px;
+        margin: 0 12px 0 12px;
+    }
+
     .header {
         width: 100%;
         display: flex;
@@ -31,6 +42,7 @@
         font-style: normal;
         font-weight: 500;
         color: #7b7b7b;
+        text-align: center;
         .blue {
             color: #9932cc;
         }
