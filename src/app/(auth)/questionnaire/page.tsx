@@ -10,6 +10,7 @@ export default function Platform() {
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
+                    padding: '64px',
                 }}>
                 <Script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></Script>
                 <iframe
