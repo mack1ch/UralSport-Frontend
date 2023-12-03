@@ -26,16 +26,14 @@ const Mont = localFont({
 export const metadata: Metadata = {
     title: 'Урал Спорт',
     description: 'Админ панель для Министерства спорта Свердловской области',
+    openGraph: { images: '../../public/assets/cover.png' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <>
             <Head>
-                <meta
-                    property="og:image"
-                    content="https://www.jurn.io/content/images/2020/07/Figma-Thumbnails.png"
-                />
+                <meta property="og:image" content="../../public/assets/cover.png" />
             </Head>
             <html lang="ru">
                 <body className={Mont.className}>{children}</body>
