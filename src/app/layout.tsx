@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.scss';
-
+import Head from 'next/head';
+const openGraphImage = { images: ['../../public/assets/cover.png'] };
 const Mont = localFont({
     src: [
         {
@@ -25,12 +26,18 @@ const Mont = localFont({
 export const metadata: Metadata = {
     title: 'Урал Спорт',
     description: 'Админ панель для Министерства спорта Свердловской области',
+    ...openGraphImage,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="ru">
-            <body className={Mont.className}>{children}</body>
-        </html>
+        <>
+            <Head>
+                <meta property="og:image" content="../../public/assets/cover.png" />
+            </Head>
+            <html lang="ru">
+                <body className={Mont.className}>{children}</body>
+            </html>
+        </>
     );
 }
