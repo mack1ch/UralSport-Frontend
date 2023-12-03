@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Урал Спорт',
     description: 'Админ панель для Министерства спорта Свердловской области',
     openGraph: {
-        images: 'https://inverse-tracker.store/media/events/covers/66422868802911ee848dd9174833472b.png',
+        images: './cover.png',
     },
 };
 
@@ -35,12 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <>
             <Head>
-                <meta
-                    property="og:image"
-                    content={
-                        'https://inverse-tracker.store/media/events/covers/66422868802911ee848dd9174833472b.png'
-                    }
-                />
+                <meta property="og:image" content="./cover.png" />
             </Head>
             <html lang="ru">
                 <body className={Mont.className}>{children}</body>
