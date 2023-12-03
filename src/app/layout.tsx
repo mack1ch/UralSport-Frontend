@@ -26,14 +26,21 @@ const Mont = localFont({
 export const metadata: Metadata = {
     title: 'Урал Спорт',
     description: 'Админ панель для Министерства спорта Свердловской области',
-    openGraph: { images: '../../public/assets/cover.png' },
+    openGraph: {
+        images: 'https://inverse-tracker.store/media/events/covers/66422868802911ee848dd9174833472b.png',
+    },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <>
             <Head>
-                <meta property="og:image" content="../../public/assets/cover.png" />
+                <meta
+                    property="og:image"
+                    content={
+                        'https://inverse-tracker.store/media/events/covers/66422868802911ee848dd9174833472b.png'
+                    }
+                />
             </Head>
             <html lang="ru">
                 <body className={Mont.className}>{children}</body>
