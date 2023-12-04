@@ -1,3 +1,9 @@
+import { Analytic } from '@/features/analytic';
+
 export default function Platform() {
-    return <>Привет</>;
+    return (
+        <>
+            <Analytic />
+        </>
+    );
 }

@@ -24,10 +24,11 @@ const Mont = localFont({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://inverse.ru'),
     title: 'Урал Спорт',
     description: 'Админ панель для Министерства спорта Свердловской области',
     openGraph: {
-        images: './cover.png',
+        images: '/public/assets/cover.png',
     },
 };
 
